@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Väderapplikation</title>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" id="greetingButton" type="button" onclick=myGreeting()>Välkommen</button>
+
+    </div>
+</head>
+<body onload="defaultScreen()">
+
+<center>
+    <h1 id="myHeader">Hur ser vädret ut?</h1>
+    <p id="myInput">City: <input type="text" id="myCity"></p>
+    <button type="button" id="searchBtn" onclick="getInfo()">Search</button>        
+    <h2 id="myCityName">Gävle</h2>
+</center>
+       
+    
+    
+    <div id = "weatherBox">
+        <div id="iconsBox">    
+            <div class = "iconClass">
+                <p class="weatherDisplay" id="dag1"></p>
+                <div class="image"><img src="loadingthing.gif" class="imgClass" id="img1"></div>
+                <p class="minValues" id="dag1Min">Laddar...</p>
+                <p class="maxValues" id="dag1Max">Laddar...</p>
+            </div>
+            <div class = "iconClass">
+                <p class="weatherDisplay" id="dag2"></p>
+                <div class="image"><img src="loadingthing.gif" class="imgClass" id="img2"></div>
+                <p class="minValues" id="dag2Min">Laddar...</p>
+                <p class="maxValues" id="dag2Max">Laddar...</p>
+            </div>
+            <div class = "iconClass">
+                <p class="weatherDisplay" id="dag3"></p>
+                <div class="image"><img src="loadingthing.gif" class="imgClass" id="img3"></div>
+                <p class="minValues" id="dag3Min">Laddar...</p>
+                <p class="maxValues" id="dag3Max">Laddar...</p>
+            </div>
+            <div class = "iconClass">
+                <p class="weatherDisplay" id="dag4"></p>
+                <div class="image"><img src="loadingthing.gif" class="imgClass" id="img4"></div>
+                <p class="minValues" id="dag4Min">Laddar...</p>
+                <p class="maxValues" id="dag4Max">Laddar...</p>
+            </div>
+            <div class = "iconClass">
+                <p class="weatherDisplay" id="dag5"></p>
+                <div class="image"><img src="loadingthing.gif" class="imgClass" id="img5"></div>
+                <p class="minValues" id="dag5Min">Laddar...</p>
+                <p class="maxValues" id="dag5Max">Laddar...</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+
+
+</body>
+</html>
